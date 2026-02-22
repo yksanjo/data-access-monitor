@@ -5,9 +5,15 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "npm run build && node --test tests/*.test.cjs"
   },
-  "keywords": ["security", "data-access", "monitoring", "policy"],
+  "keywords": [
+    "security",
+    "data-access",
+    "monitoring",
+    "policy"
+  ],
   "author": "yksanjo",
   "license": "MIT",
   "devDependencies": {
